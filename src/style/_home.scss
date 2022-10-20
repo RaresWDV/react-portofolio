@@ -1,0 +1,91 @@
+section.home {
+     display: flex;
+     .left-section-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap:5rem;
+          .title {
+               display: flex;
+               flex-direction: column;
+               span{
+                    font-size: 5rem;
+                    font-weight: 900;
+                    color:white;
+                    -webkit-text-stroke: 1px transparent;
+                    height: fit-content;
+               }
+               span:nth-child(2) {
+                    -webkit-text-stroke: 1px black;
+                    font-size: 7rem;
+                    color: black;
+               }
+          }
+
+          .description {
+               font-size: 3rem;
+               width: 80%;
+          }
+
+          a{
+               width: fit-content;
+               text-decoration: none;
+               background-color: $primary-clr;
+               padding:1rem;
+               padding-left:3rem;
+               padding-right:3rem;
+               color:white;
+               font-size: 2rem;
+          }
+     }
+
+     .right-section-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          gap:5rem;
+          a{
+               width: fit-content;
+               text-decoration: none;
+               background-color: white;
+               padding:1rem;
+               padding-left:3rem;
+               padding-right:3rem;
+               color:$primary-clr;
+               font-size: 2rem;
+          }
+          img {
+               width: 20rem;
+          }
+     }
+}
+
+@media(max-width:$md){
+     section.home {
+         flex-direction: column;
+         .left-section-content {
+          width: 100% !important;
+          .title{
+               span {
+                    -webkit-text-stroke: 1px transparent !important;
+                    color: $primary-clr !important;
+               }
+
+               span:nth-child(2) {
+                    color:black !important;
+               }
+          }
+          .description {
+               width: 100%;
+          }
+         }
+         .right-section-content {
+             width: 100% !important;
+             a{
+               background-color: $primary-clr;
+               color:white;
+          }
+         }
+     }
+   }

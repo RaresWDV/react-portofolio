@@ -1,0 +1,37 @@
+nav {
+     height: 100vh;
+     z-index: 999;
+     position: fixed;
+     width: 15rem;
+     background-color: $primary-clr;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     gap:3rem;
+     .links {
+          min-height: 50vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          a {
+               width: fit-content;
+               color: white;
+               text-decoration: none;
+               font-size: 2rem;
+               transform: rotate(-90deg);
+          }
+     }
+
+     .social {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap:3rem;
+          a {
+               color:white;
+               font-size: 2rem;
+          }
+     }
+}
